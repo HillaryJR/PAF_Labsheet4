@@ -47,6 +47,8 @@ if (request.getParameter("itemCode") == null)
  	 	out.print(session.getAttribute("statusMsg")); 
  	%> 
  	<br>
+ 	
+<!-- Java code to call readItems() --> 	
  	<%
  	Item itemObj = new Item(); 
  	out.print(itemObj.readItems()); 
