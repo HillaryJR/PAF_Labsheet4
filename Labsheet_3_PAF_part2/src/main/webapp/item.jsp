@@ -11,9 +11,14 @@
 </head>
 <body>
 
+<%
+if (request.getParameter("itemCode") == null)  
+{ 	 
+ 	Item itemObj = new Item(); 
+ 	itemObj.connect();//For testing the connect method 
+} 
 
-
-
+%>
 
 </body>
 </html>
