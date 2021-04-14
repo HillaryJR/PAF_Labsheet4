@@ -3,6 +3,20 @@
     pageEncoding="ISO-8859-1"%>
 <%@page import="com.Item"%> 
 
+
+<% 
+//Insert item---------------------------------- 
+if (request.getParameter("itemCode") != null) {
+	Item itemObj = new Item(); 
+	String stsMsg = itemObj.insertItem(request.getParameter("itemCode"), 
+			request.getParameter("itemName"), 
+			request.getParameter("itemPrice"),      
+			request.getParameter("itemDesc")); 
+	
+	session.setAttribute("statusMsg", stsMsg); } 	 
+%> 
+
+
 <!DOCTYPE html>
 <html>
 <head>
