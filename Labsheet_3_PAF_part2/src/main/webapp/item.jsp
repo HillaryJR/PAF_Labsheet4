@@ -33,6 +33,9 @@ if (request.getParameter("itemCode") == null)
 } 
 
 %>
+
+
+<!-- Form to capture data -->
 	<form method="post" action="item.jsp"> 
  	 	Item code: <input name="itemCode" type="text"><br>  	 	
  	 	Item name: <input name="itemName" type="text"><br>  
